@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=js-zustand-tasks-api">
+<a href="https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=slow-tasks-api">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hexlet/brand-assets/master/images/svg/hexlet_wordmark_white_rus.svg">
         <img src="https://raw.githubusercontent.com/Hexlet/brand-assets/master/images/svg/hexlet_wordmark_primary_rus.svg" alt="Хекслет" height="64">
@@ -9,24 +9,24 @@
 
 # Учебный сервер задач
 
-[![CI](https://github.com/hexlet-components/js-zustand-tasks-api/actions/workflows/main.yml/badge.svg)](https://github.com/hexlet-components/js-zustand-tasks-api/actions/workflows/main.yml)
-[![Check](https://github.com/hexlet-components/js-zustand-tasks-api/actions/workflows/check.yml/badge.svg)](https://github.com/hexlet-components/js-zustand-tasks-api/actions/workflows/check.yml)
+[![CI](https://github.com/hexlet-components/slow-tasks-api/actions/workflows/main.yml/badge.svg)](https://github.com/hexlet-components/slow-tasks-api/actions/workflows/main.yml)
+[![Check](https://github.com/hexlet-components/slow-tasks-api/actions/workflows/check.yml/badge.svg)](https://github.com/hexlet-components/slow-tasks-api/actions/workflows/check.yml)
 
 </div>
 
-Компонент создаёт и поддерживает команда [Хекслета](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=js-zustand-tasks-api), образовательного проекта.
+Компонент создаёт и поддерживает команда [Хекслета](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=slow-tasks-api), образовательного проекта.
 
-Локальный сервер для урока «Асинхронные действия» курса «Zustand». Приложение студента на Vite загружает с него список задач по адресу `/api/tasks`. Сервер отвечает с разной задержкой на разные фильтры, поэтому гонка двух запросов воспроизводится каждый раз. По нажатию Enter в терминале сервер начинает отвечать ошибкой 500. Каждый запрос, ответ и отмену запроса он печатает в терминал.
+Локальный сервер для фронтенд-уроков про загрузку данных. Приложение студента на Vite загружает с него список задач по адресу `/api/tasks`. Сервер отвечает с разной задержкой на разные фильтры, поэтому гонка двух запросов воспроизводится каждый раз. По нажатию Enter в терминале сервер начинает отвечать ошибкой 500. Каждый запрос, ответ и отмену запроса он печатает в терминал.
 
-Задачи, задержки и размер страницы цитирует урок. После их правки нужно поменять и урок.
+Первым сервер взял урок «Асинхронные действия» курса «Zustand». Задачи, задержки и размер страницы уроки цитируют, поэтому после их правки нужно поменять и уроки.
 
 ## Запуск
 
 Нужен Node.js 22 или новее. Зависимостей у сервера нет, ставить пакеты не нужно.
 
 ```sh
-git clone https://github.com/hexlet-components/js-zustand-tasks-api.git
-cd js-zustand-tasks-api
+git clone https://github.com/hexlet-components/slow-tasks-api.git
+cd slow-tasks-api
 npm start
 ```
 

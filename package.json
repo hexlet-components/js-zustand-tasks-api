@@ -1,7 +1,7 @@
 {
-  "name": "js-zustand-tasks-api",
+  "name": "slow-tasks-api",
   "private": true,
-  "description": "Учебный сервер задач для курса «Zustand» на Хекслете",
+  "description": "Учебный сервер задач с задержками и режимом отказа для фронтенд-курсов Хекслета",
   "license": "MIT",
   "type": "module",
   "engines": {
