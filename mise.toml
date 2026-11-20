@@ -4,6 +4,8 @@ hk = "2"
 jactionlint = "latest"
 lychee = "latest"
 node = "26"
+"npm:oxfmt" = "0.79.0"
+"npm:oxlint" = "1.94.0"
 "npm:@commitlint/cli" = "latest"
 "npm:@commitlint/config-conventional" = "latest"
 pkl = "latest"
@@ -11,15 +13,19 @@ rumdl = "latest"
 typos = "latest"
 
 # Задачи проекта живут здесь, Makefile только проксирует make <задача> в mise run.
-# Первая настройка (AGENTS.md) ставит зависимости стека в setup перед hk install
-# и заполняет test.
+# У сервера нет зависимостей, поэтому setup ставит только git-хуки.
 [tasks.setup]
 description = "Поставить зависимости и git-хуки"
 run = ["hk install"]
 
 [tasks.test]
-description = "Тесты стека"
-run = 'echo "test не настроен, см. AGENTS.md" >&2; exit 1'
+description = "Тесты контракта сервера"
+run = "node --test"
+
+[tasks.start]
+description = "Запустить сервер на порту 3000"
+raw = true
+run = "node server.js"
 
 [tasks.check]
 description = "Все проверки, тот же набор, что гоняет CI"

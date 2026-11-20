@@ -6,6 +6,15 @@ import "package://github.com/jdx/hk/releases/download/v2.8.1/hk@2.8.1#/Builtins.
 // Быстрые проверки идут на каждый коммит. Сеть и долгие шаги вынесены в all:
 // их гоняют check, pre-push и CI.
 local fast = new Mapping<String, Step> {
+  ["oxfmt"] {
+    glob = List("**/*.js", "**/*.ts")
+    check = "oxfmt --check {{files}}"
+    fix = "oxfmt {{files}}"
+  }
+  ["oxlint"] {
+    glob = List("**/*.js", "**/*.ts")
+    check = "oxlint --deny-warnings {{files}}"
+  }
   ["rumdl"] = Builtins.rumdl
   ["typos"] = Builtins.typos
   ["jactionlint"] = Builtins.jactionlint
